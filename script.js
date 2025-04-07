@@ -21,3 +21,8 @@ toggleLang.addEventListener("click", () => {
   document.body.setAttribute("dir", isEnglish ? "ltr" : "rtl");
   toggleLang.textContent = isEnglish ? "FA" : "EN";
 });
+
+function scrollToPortfolio() {
+  const section = document.getElementById("portfolio");
+  section.scrollIntoView({ behavior: "smooth" });
+}
